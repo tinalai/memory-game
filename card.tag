@@ -9,18 +9,17 @@
     </div>
   </div>
 
-  </div>
   this.images = [ 'one', 'two', 'three', 'four', 'five', 'six']
 
   <style>
-    .card-container { perspective: 1200px }
+  .card-container { perspective: 1000; -webkit-perspective: 1000; border: 1px solid #ccc; display: block; margin-bottom: 10px }
     /* hover flip */
     .card-container:hover .flip-card, .card-container.hover .flip-card { transform: rotateY(180deg) }
 
-    .flip-card, .front, .back { width: 227px; height: 223px; border-radius: 15px }
+    .card-container, .front, .back { width: 227px; height: 223px; box-sizing: border-box; border-radius: 15px }
 
     /* flip card speed */
-    .flip-card { transition: 0.6s; transform-style: preserve-3d; margin: 10px; position: relative }
+    .flip-card { transition: 0.6s; transform-style: preserve-3d; position: relative }
 
     .front, .back { backface-visibility: hidden; position: absolute; top: 0; left: 0 }
 
