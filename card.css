@@ -3,7 +3,7 @@
   flex-wrap: wrap;
   justify-content: space-between;
   border: 1px solid #ccc;
-  max-width: 874px;
+  max-width: 1000px;
 }
 .card-container {
   perspective: 1000;
