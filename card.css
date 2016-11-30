@@ -1,0 +1,52 @@
+.play-container {
+  display:flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  border: 1px solid #ccc;
+  max-width: 874px;
+}
+.card-container {
+  perspective: 1000;
+  -webkit-perspective: 1000;
+  border: 1px solid #ccc;
+  margin-bottom: 10px;
+   }
+
+   /*hover flip */
+.card-container:hover .flip-card, .card-container.hover .flip-card {
+  transform: rotateY(180deg);
+}
+
+.card-container, .front, .back {
+  width: 227px;
+  height: 223px;
+  box-sizing: border-box;
+  border-radius: 15px
+   }
+
+/* flipping speed */
+.flip-card {
+  transition: 0.6s;
+  transform-style: preserve-3d;
+  position: relative;
+  }
+
+.front, .back {
+  backface-visibility: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+   }
+
+.front {
+  z-index: 2;
+  background: #0be0a0;
+  box-shadow: 3px 3px 3px rgb(6, 86, 92);
+  border: 20px solid #0e878f;
+  box-sizing: border-box;
+   }
+
+.back {
+  transform: rotateY(-180deg);
+  box-shadow: 3px 3px 3px rgb(204, 204, 204);
+}
