@@ -1,6 +1,7 @@
 <card>
   <div class="play-container">
     <div class=card-container each={ shuffledArray } >
+      <a onclick={ parent.flipCard }></a>
       <div class="flip-card" id={ this.id }>
         <div class="front" >
         </div>
@@ -34,5 +35,9 @@
   }
 
   this.shuffledArray = this.shuffle(this.doubleImages)
+
+  flip(){
+    
+  }
 
 </card>
